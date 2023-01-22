@@ -278,7 +278,7 @@ html, body {
     .gamerating {font-size: 24px; font-weight: 700;}
     
     .gametype, .gamerating {flex-basis: 150px;}
-    .players1, .players2 {flex-basis: 200px;}
+    .players1, .players2 {flex-basis: 250px; line-height: 40px;}
     .players1 {margin-left: 20px;}
     .gametype, .gamerating, .gametypeheading, .gameratingheading {text-align: center;}
     .table > div.row {height: 110px;}
