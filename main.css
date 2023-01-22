@@ -31,7 +31,10 @@ html, body {
 .dropdownlist > div {margin: 6px;}
 .dropdownlist > img {margin: 8px;}
 
-.circleimages {margin: 14px;}
+.circleimages {
+    width: 41px; height:41px;
+    margin: 14px;
+}
 
 .tableheadmargin {
     display: flex;
