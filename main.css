@@ -358,7 +358,7 @@ html, body {
 
     .announcementstablelastrow {height: 10.5%;}
 
-    .courtsheading {font-size: 24px; font-weight: 500;}
+    .courtsheading {font-size: 24px; font-weight: 500; color: #222222}
     .courtsheadingcontainer {padding-top: 2.5%; height: 8.2%}
 
     .allcourtscontainermargin {height: 57.2%; width: 100%;}
