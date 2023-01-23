@@ -257,12 +257,13 @@ html, body {
 
     .gametypeheading, .gameratingheading {
         font-size: 20px; font-weight: 500;
-        width: 13.2%;
+        width: 13.2%; line-height: 20px;
     }
 
     .playersheading {margin-left: 20px; width:22%;}
     .pseudoplayersheading {flex-grow: 2; margin-left: 11px; width:22%;}
     .waitingtimeheading {width: 23%}
+    .gametypeheading, .gametype {margin-left: 8px;}
     
     .row {
         display: flex;
