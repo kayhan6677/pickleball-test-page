@@ -257,11 +257,12 @@ html, body {
 
     .gametypeheading, .gameratingheading {
         font-size: 20px; font-weight: 500;
-        flex-basis: 150px;
+        width: 13.2%;
     }
 
-    .playersheading {margin-left: 20px; flex-basis: 200px;}
-    .pseudoplayersheading {flex-grow: 2; flex-basis: 200px;}
+    .playersheading {margin-left: 20px; width:22%;}
+    .pseudoplayersheading {flex-grow: 2; margin-left: 11px; width:22%;}
+    .waitingtimeheading {width: 23%}
     
     .row {
         display: flex;
@@ -273,13 +274,14 @@ html, body {
     .table{margin:0 40px 0 74px;}
     .rightcontainer {margin-left: 40px;}
     .playersheading {font-size: 20px;}
-    .waitingtimeheading, .waitingtime {font-size: 24px; flex-basis: 250px;}
+    .waitingtimeheading, .waitingtime {font-size: 24px;}
     .waitingtime, .waitingtimeheading {text-align: right; margin-right: 20px;}
     .gamerating {font-size: 24px; font-weight: 700;}
     
-    .gametype, .gamerating {flex-basis: 150px;}
-    .players1, .players2 {flex-basis: 250px; line-height: 40px;}
-    .players1 {margin-left: 20px;}
+    .gametype, .gamerating {width: 13.2%;}
+    .players1, .players2 {width:22%; line-height: 40px; flex-basis: 160px;}
+    .players1 {width:22%; margin-left: 20px;}
+    .waitingtime {width: 23%; flex-basis: 150px;}
     .gametype, .gamerating, .gametypeheading, .gameratingheading {text-align: center;}
     .table > div.row {height: 110px;}
 
