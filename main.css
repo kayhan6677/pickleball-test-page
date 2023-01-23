@@ -284,6 +284,7 @@ html, body {
     .players1 {width:22%; margin-left: 20px;}
     .waitingtime {width: 23%; flex-basis: 150px;}
     .gametype, .gamerating, .gametypeheading, .gameratingheading {text-align: center;}
+    .handshake {position: relative; top: 5px; left: -2px;}
     .table > div.row {height: 110px;}
 
     .bold {font-weight:400;}
