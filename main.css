@@ -176,7 +176,14 @@ html, body {
     margin-left: 17px; margin-right: 17px;
     border-radius: 15px;
     background-color: #F8F8F8;
+    position: relative;
 }
+
+.compasssmall {
+    position: absolute;
+    top: 3%; right: 2%;
+}
+.compassbig {display: none;}
 
 .courtstopcontainer, .courtsbottomcontainer {
     display: flex;
@@ -184,7 +191,7 @@ html, body {
     align-items: center;
     height: 50%; width: 80%;
 }
-.courtstopcontainer {padding: 12% 0 4% 0;}
+.courtstopcontainer {padding: 13% 0 4% 0;}
 .courtsbottomcontainer {padding: 4% 0 6% 0;}
 
 .court1, .court2, .court3, .court4,
@@ -224,13 +231,14 @@ html, body {
 @media only screen and (min-width: 768px) {
    
     .header, .tableheadmargin, .otherinfo, .triangle, 
-    .lastrow, .trashcan, .addmetext {display: none;}
+    .lastrow, .trashcan, .addmetext, .compasssmall {display: none;}
 
     .bigcontainer {flex-direction: row;}
 
     .announcementstablemargin, .addbutton, .gametype, .gamerating, 
-    .gametypeheading, .gameratingheading, .courtred-box, .courtsheadingtext,
-    .courtplay, .addtothewaitinglisttext, .extended {display:inline;}
+    .gametypeheading, .gameratingheading, .compassbig, .courtred-box, 
+    .courtsheadingtext, .courtplay, .addtothewaitinglisttext, 
+    .extended {display:inline;}
 
     .tablemargin, .announcementstablemargin, .courts, .addbutton {width: 100%;}
 
@@ -270,7 +278,7 @@ html, body {
         position: relative; 
         top: 10px;
     }
-    
+
     .gametypeheading, .gametype {margin-left: 8px;}
     
     .row {
@@ -347,7 +355,8 @@ html, body {
 
     .announcementstablelastrow {height: 10.5%;}
     .allcourtscontainermargin {height: 62%; width: 100%;}
-    .allcourtscontainer {background-color: transparent;}
+    .allcourtscontainer {background-color: transparent; position: static;}
+    .compassbig {position: absolute; top: 20px; right: 28px;}
     .courtstopcontainer, .courtsbottomcontainer {height: 50%; width: 80%;}
     .courtstopcontainer {padding-top: 0%;}
     .courtsbottomcontainer {padding-bottom: 4%;}
