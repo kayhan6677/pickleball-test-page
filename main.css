@@ -276,8 +276,9 @@ html, body {
     .rightcontainer {margin-left: 40px;}
     .playersheading {font-size: 20px; position: relative; top: 10px;}
     .waitingtimeheading, .waitingtime {font-size: 24px;}
-    .waitingtime, .waitingtimeheading {text-align: right; margin-right: 20px;}
+    .waitingtime {text-align: right; margin-right: 30px;}
     .gamerating {font-size: 24px; font-weight: 700;}
+    .waitingtimeheading {text-align: right; margin-right: 15px; position: relative; top: 10px;}
     
     .gametype, .gamerating {width: 13.2%;}
     .players1, .players2 {width:22%; line-height: 40px; flex-basis: 160px;}
