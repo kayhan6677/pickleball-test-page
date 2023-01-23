@@ -337,6 +337,7 @@ html, body {
     .announcementstabledatetime {
         height: 11.5%;
         font-size: 18px; font-weight: 400;
+        color: #393939;
         display: flex;
         justify-content: space-between;
         padding-left: 4%; padding-right: 7%;
