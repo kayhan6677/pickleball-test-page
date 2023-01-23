@@ -342,6 +342,8 @@ html, body {
         padding-left: 4%; padding-right: 7%;
     }
 
+    .pmtext {font-size: 14px; font-weight: 300;}
+
     .announcementstablebody {
         height: 54%;
         font-size: 18px; font-weight: 300;
