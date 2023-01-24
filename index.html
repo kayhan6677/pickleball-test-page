@@ -28,82 +28,20 @@
     <div class="tablehead_extended">
         <div>Waiting List</div>
         <div>Announcements</div>
+        
     </div>
     <div class="bigcontainer">
         <div class="leftcontainer">
             <div class="tablemargin">
-                <div class="table">
-                    <div class="tablehead2">
+                <div id="table">
+                    <div id="tablehead2">
                         <div class="gametypeheading">Game Type</div>
                         <div class="gameratingheading">Game Rating</div>
                         <div class="playersheading">Players</div>
                         <div class="pseudoplayersheading"></div>
                         <div class="waitingtimeheading">Waiting Time</div>
                     </div>
-                    <div class="row mobile">
-                        <div class="gametype"><img src="img/double.svg" alt="doublesymbol"></div>
-                        <div class="gamerating">3.5</div>
-                        <div class="players1">Lynn Tanner <br> Sledge Hammer</div>
-                        <div class="players2">Roderick Flich <br> Willie Tanner</div>
-                        <div class="waitingtime"><span class="waitingtimeminutes">16 </span> mins</div>
-                        <div class="trashcan"><img src="img/trashcan.svg" alt="trashcan"></div>
-                    </div>
-                    <div class="row mobile">
-                        <div class="gametype"><img src="img/double.svg" alt="doublesymbol"></div>
-                        <div class="gamerating">3.5</div>
-                        <div class="players1">Angus McGyver <br> Hannibal Smith</div>
-                        <div class="players2">Micheal Knight <br> Fred Decker</div>
-                        <div class="waitingtime"><span class="waitingtimeminutes">19 </span> mins</div>
-                        <div class="trashcan"><img src="img/trashcan.svg" alt="trashcan"></div>
-                    </div>
-                    <div class="row mobile">
-                        <div class="gametype"><img src="img/double.svg" alt="doublesymbol"></div>
-                        <div class="gamerating"><img class="handshake" src="img/handshake.svg" alt="handshake"></div>
-                        <div class="players1 bold"> Thomas Magnum <br> Roderick Decker</div>
-                        <div class="players2 bold">Tony Danza <br><span class="color"> Your Name</span></div>
-                        <div class="waitingtime"><span class="waitingtimeminutes">21 </span> mins</div>
-                        <div class="trashcan"><img src="img/trashcan.svg" alt="trashcan"></div>
-                    </div>
-                    <div class="row mobile">
-                        <div class="gametype"><img src="img/double.svg" alt="doublesymbol"></div>
-                        <div class="gamerating">3.5</div>
-                        <div class="players1">Cristian Tanner <br> B.A. Baracus</div>
-                        <div class="players2">Capt. Trunk <br> Dori Doreau</div>
-                        <div class="waitingtime"><span class="waitingtimeminutes">26 </span> mins</div>
-                        <div class="trashcan"><img src="img/trashcan.svg" alt="trashcan"></div>
-                    </div>
-                    <div class="row extended">
-                        <div class="gametype"><img src="img/double.svg" alt="doublesymbol"></div>
-                        <div class="gamerating"><img class="handshake" src="img/handshake.svg" alt="handshake"></div>
-                        <div class="players1">Lynn Tanner <br> Roderick Flich</div>
-                        <div class="players2">Sledge Hammer <br> Willie Tanner</div>
-                        <div class="waitingtime"><span class="waitingtimeminutes">19 </span> mins</div>
-                        <div class="trashcan"><img src="img/trashcan.svg" alt="trashcan"></div>
-                    </div>
-                    <div class="row extended">
-                        <div class="gametype"><img src="img/double.svg" alt="doublesymbol"></div>
-                        <div class="gamerating"><img class="handshake" src="img/handshake.svg" alt="handshake"></div>
-                        <div class="players1">Angus MacGyver <br> Hannibal Smith</div>
-                        <div class="players2">Michael Knight <br> Fred Decker</div>
-                        <div class="waitingtime"><span class="waitingtimeminutes">19 </span> mins</div>
-                        <div class="trashcan"><img src="img/trashcan.svg" alt="trashcan"></div>
-                    </div>
-                    <div class="row extended">
-                        <div class="gametype"><img src="img/double.svg" alt="doublesymbol"></div>
-                        <div class="gamerating"><img class="handshake" src="img/handshake.svg" alt="handshake"></div>
-                        <div class="players1">Thomas Magnum <br> Roderick Decker</div>
-                        <div class="players2">Tony Danza <br> Your Name</div>
-                        <div class="waitingtime"><span class="waitingtimeminutes">21 </span> mins</div>
-                        <div class="trashcan"><img src="img/trashcan.svg" alt="trashcan"></div>
-                    </div>
-                    <div class="row extended">
-                        <div class="gametype"><img src="img/single.svg" alt="singlesymbol"></div>
-                        <div class="gamerating"><img class="handshake" src="img/handshake.svg" alt="handshake"></div>
-                        <div class="players1">Cristian Tanner</div>
-                        <div class="players2">Capt. Trunk</div>
-                        <div class="waitingtime"><span class="waitingtimeminutes">26 </span> mins</div>
-                        <div class="trashcan"><img src="img/trashcan.svg" alt="trashcan"></div>
-                    </div>
+                    <script src="js/scriptwaitinglist.js"></script>
                     <div class="lastrow"></div>
                 </div> 
             </div>
@@ -124,69 +62,10 @@
                 <div class="courtsheading"><span class="courtsheadingtext">Courts</span></div>
             </div>
             <div class="allcourtscontainermargin">
-                <div class="allcourtscontainer">
+                <div id="allcourtscontainer">
                     <img class="compasssmall" src="img/compasssmall.svg" alt="compassfigure">
                     <img class="compassbig" src="img/compassbig.svg" alt="compassfigure">
-                    <div class="courtstopcontainer">
-                        <div class="court1">
-                            <div class="courtplayers1 courtplay">Roderick D.</div>
-                            <div class="courtplayers2 courtplay">Devon M.</div>
-                            <div class="courtred-box">12 min.</div>
-                            <div class="courtplayers3 courtplay">Rick W.</div>
-                            <div class="courtplayers4 courtplay">Dori D.</div>
-                        </div>
-                        <div class="court2">
-                            <div class="courtplayers1 courtplay">Roderick D.</div>
-                            <div class="courtplayers2 courtplay">Devon M.</div>
-                            <div class="courtred-box">12 min.</div>
-                            <div class="courtplayers3 courtplay">Rick W.</div>
-                            <div class="courtplayers4 courtplay">Dori D.</div>
-                        </div>
-                        <div class="court3">                        
-                            <div class="courtplayers1 courtplay">Roderick D.</div>
-                            <div class="courtplayers2 courtplay">Devon M.</div>
-                            <div class="courtred-box">12 min.</div>
-                            <div class="courtplayers3 courtplay">Rick W.</div>
-                            <div class="courtplayers4 courtplay">Dori D.</div>
-                        </div>
-                        <div class="court4">                        
-                            <div class="courtplayers1 courtplay">Roderick D.</div>
-                            <div class="courtplayers2 courtplay">Devon M.</div>
-                            <div class="courtred-box">12 min.</div>
-                            <div class="courtplayers3 courtplay">Rick W.</div>
-                            <div class="courtplayers4 courtplay">Dori D.</div>
-                        </div>
-                    </div>
-                    <div class="courtsbottomcontainer">
-                        <div class="court5">                        
-                            <div class="courtplayers1 courtplay">Roderick D.</div>
-                            <div class="courtplayers2 courtplay">Devon M.</div>
-                            <div class="courtred-box">12 min.</div>
-                            <div class="courtplayers3 courtplay">Rick W.</div>
-                            <div class="courtplayers4 courtplay">Dori D.</div>
-                        </div>
-                        <div class="court6">                        
-                            <div class="courtplayers1 courtplay">Roderick D.</div>
-                            <div class="courtplayers2 courtplay">Devon M.</div>
-                            <div class="courtred-box">12 min.</div>
-                            <div class="courtplayers3 courtplay">Rick W.</div>
-                            <div class="courtplayers4 courtplay">Dori D.</div>
-                        </div>
-                        <div class="court7">                        
-                            <div class="courtplayers1 courtplay">Roderick D.</div>
-                            <div class="courtplayers2 courtplay">Devon M.</div>
-                            <div class="courtred-box">12 min.</div>
-                            <div class="courtplayers3 courtplay">Rick W.</div>
-                            <div class="courtplayers4 courtplay">Dori D.</div>
-                        </div>
-                        <div class="court8">                        
-                            <div class="courtplayers1 courtplay">Roderick D.</div>
-                            <div class="courtplayers2 courtplay">Devon M.</div>
-                            <div class="courtred-box">12 min.</div>
-                            <div class="courtplayers3 courtplay">Rick W.</div>
-                            <div class="courtplayers4 courtplay">Dori D.</div>
-                        </div>
-                    </div>
+                    <script src="js/scriptallcourts.js"></script>
                 </div>
             </div>
             <div class="addbutton">
