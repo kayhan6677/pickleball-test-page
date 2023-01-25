@@ -97,7 +97,8 @@ html, body {
 .lastrow {height: 10px;}
 #table > div.row:nth-child(odd) {
     background: #F5F5F5;
-    border: 1px solid #E4E4E4;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
 }
 
 #tablehead2 {
@@ -119,7 +120,7 @@ html, body {
 }
 
 .waitingtimeminutes {font-weight: 700}
-.trashcan {margin-top: 7px; margin-right: 16px;}
+.trashcan {margin-top: 7px; margin-right: 13px;}
 
 .extended {display: none;}
 
