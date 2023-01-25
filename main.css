@@ -108,7 +108,7 @@ html, body {
 }
 
 .playersheading {margin-left: 13px;}
-.waitingtimeheading {margin-right: 17px;}
+.waitingtimeheading {margin-right: 30px;}
 .gametypeheading, .gameratingheading, .gametype, .gamerating {display:none}
 
 .waitingtime {
