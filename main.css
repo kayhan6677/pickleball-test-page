@@ -312,13 +312,13 @@ html, body {
         width:22%;
         margin-left: 20px; 
         line-height: 50px; 
-        flex-basis: 160px;
+        flex-basis: 200px;
     }
 
     .players2 {
         width:22%; 
         line-height: 50px; 
-        flex-basis: 160px;
+        flex-basis: 200px;
     }
 
     .current-user-game {font-weight: 400;}
