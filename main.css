@@ -184,16 +184,16 @@ html, body {
     margin-left: 17px; margin-right: 17px;
     background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
     border-radius: 4px;
-}
-
-#addmetext { 
     font-size: 16px; font-weight:600;
     color: #FFFFFF;
     line-height: 36px;
     text-align: center;
 }
 
-#addtothewaitinglisttext {display: none;}
+#addbutton::after {
+    content: " me";
+}
+
 
 @media only screen and (max-width: 410px) {
     .mobile {font-size: 10px;}
@@ -202,8 +202,7 @@ html, body {
 @media only screen and (min-width: 768px) {
 
     #header, #questionmark, #recycle, #otherinfo, #triangle,
-    .trashcan, #compasssmall, #addmetext,
-    #waitinglistlastrow {display: none;}
+    .trashcan, #compasssmall, #waitinglistlastrow {display: none;}
 
     #announcementstext, .extended, #gametypeheading,
     #gameratingheading, .gametype, .gamerating,
@@ -436,14 +435,14 @@ html, body {
         margin: 0 10.4% 0 4.3%;
         background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
         border-radius: 4px;
-    }
-
-    #addtothewaitinglisttext {
-        height: 80px;
         font-size: 24px; font-weight:600;
         color: #FFFFFF;
         text-align: center; 
         line-height: 80px;
+    }
+
+    #addbutton::after {
+        content: " to the waiting list";
     }
 
     @media only screen and (max-width: 1500px) {
