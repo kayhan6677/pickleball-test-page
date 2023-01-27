@@ -118,9 +118,10 @@ html, body {
     flex-grow: 8; 
 }
 
-.bold {font-weight: 600;}
-.color {color: #B74534}
+.current-user-game {font-weight: 600;}
+.current-user {color: #B74534}
 
+#waitinglistlastrow {height:10px;}
 
 #otherinfo {
     position: absolute;
@@ -201,7 +202,8 @@ html, body {
 @media only screen and (min-width: 768px) {
 
     #header, #questionmark, #recycle, #otherinfo, #triangle,
-    .trashcan, #compasssmall, #addmetext {display: none;}
+    .trashcan, #compasssmall, #addmetext,
+    #waitinglistlastrow {display: none;}
 
     #announcementstext, .extended, #gametypeheading,
     #gameratingheading, .gametype, .gamerating,

@@ -29,8 +29,8 @@ var content ="";
         }
         if (gametype[i]=="D") {
             if (i==2) {
-                content += '<div class="players1 bold">'+player1[2*i]+' <br> '+player1[2*i+1]+ '</div>'
-            + '<div class="players2 bold">' + player2[2*i] + ' <br><span class="color"> ' + player2[2*i+1] + '</span></div>';
+                content += '<div class="players1 current-user-game">'+player1[2*i]+' <br> '+player1[2*i+1]+ '</div>'
+            + '<div class="players2 current-user-game">' + player2[2*i] + ' <br><span class="current-user"> ' + player2[2*i+1] + '</span></div>';
             } else { 
             content += '<div class="players1">'+player1[2*i]+' <br> '+player1[2*i+1]+ '</div>'
             + '<div class="players2">' + player2[2*i] + ' <br> ' + player2[2*i+1] + '</div>';
