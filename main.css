@@ -44,12 +44,12 @@ html, body {
 
 #waitinglisttext {
     position: absolute;
-    left: 6.6%; top: 3px;
+    left: 26px; top: 3px;
 }
 
 #questionmark {
     position: absolute;
-    left: 40.2%;
+    left: 158px;
 }
 
 #recycle {
@@ -320,8 +320,8 @@ html, body {
         flex-basis: 160px;
     }
 
-    .bold {font-weight:400;}
-    .color {color: #414141}
+    .current-user-game {font-weight: 400;}
+    .current-user {color: #414141;}
 
     .waitingtime {
         width: 23%;
@@ -384,7 +384,7 @@ html, body {
         margin-right: 43.2%;
     }
 
-    #compassbig {position: absolute; top: 20px; right: 28px;}
+    #compassbig {position: absolute; top: 20px; right: 20px;}
 
     #allcourtscontainer {
         height: 539.2px;
