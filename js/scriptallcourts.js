@@ -1,6 +1,6 @@
 var content ="";
 
-content +='<div class="courtstopcontainer">';
+content += '<div id=courtstopcontainer>'
 
 for (i=0; i<4; i++) {
     content += '<div class="court'+ (i+1) + '">' 
@@ -11,8 +11,7 @@ for (i=0; i<4; i++) {
     + '<div class="courtplayers4 courtplay">Dori D.</div></div>';
 }
 
-content +='</div>';
-content +='<div class="courtsbottomcontainer">';
+content += '</div><div id=courtsbottomcontainer>'
 
 for (i=4; i<8; i++) {
     content += '<div class="court'+ (i+1) + '">' 
@@ -23,6 +22,6 @@ for (i=4; i<8; i++) {
     + '<div class="courtplayers4 courtplay">Dori D.</div></div>';
 }
 
-content +='</div>';
+content += '</div>'
 
 document.getElementById("allcourtscontainer").innerHTML += content;

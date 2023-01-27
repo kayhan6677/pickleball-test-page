@@ -7,18 +7,22 @@ html, body {
     margin: 0;
 }
 
-.header {
+#header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%; height: 63px;
+    height: 63px;
     background-image: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
     border-radius: 0 0 15px 15px;
 }
 
-.selectcourt {
+.headercircleimages {
+    width: 41px; height:41px;
+    margin: 14px;
+}
+
+#headerselectcourt {
     appearance: none;
-    background-color: DodgerBlue;
     background-image: url(img/vectorbutton.svg);
     background-repeat: no-repeat;
     background-position-x: 97%;
@@ -30,87 +34,68 @@ html, body {
     border-radius: 4px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
     color: #3F3F3F;
-  }
-
-.circleimages {
-    width: 41px; height:41px;
-    margin: 14px;
 }
 
-.tableheadmargin {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-top: 11px;
-    margin-right: 11px;
-}
-
-.tableheadmargin > * {margin-right: 15px;}
-
-.tablehead {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-left: 26px;
-}
-
-.tablehead > * {
-    margin-right: 10px;
+#bothtableheads {
+    position: relative;
+    margin-top: 15px;
     font-size: 18px; font-weight: 500;
 }
 
-.tablehead div {width: 122px;}
-
-.tablehead_extended {display:none;}
-
-.bigcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#waitinglisttext {
+    position: absolute;
+    left: 6.6%; top: 3px;
 }
 
-.leftcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; height: 100%;
+#questionmark {
+    position: absolute;
+    left: 40.2%;
 }
 
-.rightcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; height: 100%;
+#recycle {
+    position: absolute;
+    right: 6.6%;
 }
 
-.tablemargin {width: 100%; height: 36.7%;}
+#announcementstext {display: none;}
 
-#table {
-    margin-top: 7px;
+#bigcontainer {
+    width: 100%;
+    position: absolute;
+    top: 117px;
+    display: flex;
+    flex-direction: column;
+}
+
+#waitinglist {
     margin-left: 17px; margin-right: 17px;
     border: 2px solid;
     border-color: rgb(186,92,74);
     border-radius: 15px;
+    color: #414141;
 }
 
-#table > div.mobile, #tablehead2 {height: 40px;} 
-.lastrow {height: 10px;}
-#table > div.row:nth-child(odd) {
+#waitingfirstrow, .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 14px; font-weight: 500;
+    height: 40px; 
+}
+
+.row {font-size: 12px; font-weight: 400;}
+
+.extended, #gametypeheading, #gameratingheading, .gametype, .gamerating {display:none;}
+
+#waitinglist > div.row:nth-child(odd) {
     background: #F5F5F5;
     border-top: 1px solid #E4E4E4;
     border-bottom: 1px solid #E4E4E4;
 }
 
-#tablehead2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    font-size: 14px; font-weight: 500; 
-}
+#playersheading {margin-left: 13px; color: #222222;}
+#waitingtimeheading {margin-right: 30px; color: #222222;}
 
-.playersheading {margin-left: 13px;}
-.waitingtimeheading {margin-right: 30px;}
-.gametypeheading, .gameratingheading, .gametype, .gamerating {display:none}
 
 .waitingtime {
     font-size: 16px; 
@@ -118,19 +103,9 @@ html, body {
     flex-basis: 100px; 
     text-align: right;
 }
-
 .waitingtimeminutes {font-weight: 700}
 .trashcan {margin-top: 7px; margin-right: 13px;}
 
-.extended {display: none;}
-
-.mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12px; font-weight: 400;
-    color: #414141;
-}
 
 .players1 {
     margin-left: 13px;
@@ -138,18 +113,19 @@ html, body {
 }
 
 .players2 {
-    flex-grow: 8; 
-    flex-basis: 115px; 
     margin-left: 11px;
+    flex-basis: 115px; 
+    flex-grow: 8; 
 }
 
 .bold {font-weight: 600;}
 .color {color: #B74534}
 
-.otherinfo {
+
+#otherinfo {
     position: absolute;
     width: 142.75px; height: 19px;
-    left: 38px; top: 312px;
+    left: 38px; top: 202px;
     font-size: 16px; font-weight: 500;
     color: #B74534; 
     text-decoration: underline;
@@ -157,51 +133,42 @@ html, body {
     background: #FFFFFF;
 }
 
-.triangle {
+#triangle {
     position: absolute;
     width: 37px; height: 16px;
-    right: 38px; top: 316px;
+    right: 38px; top: 207px;
     background: #FFFFFF;
     text-align: center;
 }
 
-.announcementstablemargin, .courtsheadingtext {display:none;}
-.allcourtscontainermargin {height: 62%; width: 100%;}
-.courtsheadingcontainer {height: 25px;}
+#announcementstable, #compassbig, #courtsheadingtext {display:none;}
 
 #allcourtscontainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50%; 
-    margin-left: 17px; margin-right: 17px;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 286px; 
+    margin: 25px 18px 15px 15px;
+    padding: 47.5px 52px 29px 54px;
     border-radius: 15px;
     background-color: #F8F8F8;
     position: relative;
 }
 
-.compasssmall {
+#courtstopcontainer, #courtsbottomcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#compasssmall {
     position: absolute;
     top: 3%; right: 2%;
 }
-.compassbig {display: none;}
-
-.courtstopcontainer, .courtsbottomcontainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50%; width: 80%;
-}
-.courtstopcontainer {padding: 13% 0 4% 0;}
-.courtsbottomcontainer {padding: 4% 0 6% 0;}
 
 .court1, .court2, .court3, .court4,
 .court5, .court6, .court7, .court8 {
     width: 52px; height: 88px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
 }  
 
 .court1, .court2, .court3, .court4,
@@ -211,139 +178,180 @@ html, body {
 
 .courtplay, .courtred-box {display: none;}
 
-.addbutton {width: 100%; margin-top: 15px;}
-.addbuttontext { height: 36px;
+#addbutton {
+    height: 36px;
     margin-left: 17px; margin-right: 17px;
     background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
     border-radius: 4px;
-    font-size: 16px; font-weight:600;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.addtothewaitinglisttext {display:none;}
+#addmetext { 
+    font-size: 16px; font-weight:600;
+    color: #FFFFFF;
+    line-height: 36px;
+    text-align: center;
+}
 
+#addtothewaitinglisttext {display: none;}
 
 @media only screen and (max-width: 410px) {
     .mobile {font-size: 10px;}
 }
 
 @media only screen and (min-width: 768px) {
-   
-    .header, .tableheadmargin, .otherinfo, .triangle, 
-    .lastrow, .trashcan, .addmetext, .compasssmall {display: none;}
 
-    .bigcontainer {flex-direction: row;}
+    #header, #questionmark, #recycle, #otherinfo, #triangle,
+    .trashcan, #compasssmall, #addmetext {display: none;}
 
-    .announcementstablemargin, .addbutton, .gametype, .gamerating, 
-    .gametypeheading, .gameratingheading, .compassbig, .courtred-box, 
-    .courtsheadingtext, .courtplay, .addtothewaitinglisttext, 
-    .extended {display:inline;}
+    #announcementstext, .extended, #gametypeheading,
+    #gameratingheading, .gametype, .gamerating,
+    #compassbig, .courtplay, .courtred-box
+    {display: inline;}
 
-    .tablemargin, .courts {width: 100%;}
+    #announcementstable, #courtsheadingtext, 
+    #addtothewaitinglisttext {display: block;}
 
-    #allcourtscontainer {
-        height: 100%; width: 100%;
-        background-color: white;
-    }
-
-    .tablehead_extended {
-        height: 75px;
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
+    #bothtableheads {
+        margin-top: 0;
         font-size: 24px; font-weight: 500;
-        margin-top: 5px; margin-left: 74px; margin-right: 96px;
     }
 
-    #tablehead2 {
-        height: 88px;
+    #waitinglisttext {
+        left: 22.4%; top: 5px;
+        line-height: 70px;
+        color: #222222;
+    }
+
+    #announcementstext {
+        position: absolute;
+        right: 18.5%; top: 5px;
+        line-height: 70px;
+        color: #222222;
+    }
+        
+
+
+    #bigcontainer {
+        flex-direction: row;
+        top: 75px;
+    }
+
+    #leftcontainer {
+        width: 52.1%;
+    }
+
+    #waitinglist {margin: 0 4.0% 0 7.4%;}
+
+    #waitingfirstrow {
+        height: 87.3px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .gametypeheading, .gameratingheading {
-        font-size: 20px; font-weight: 500;
-        width: 13.2%; line-height: 20px;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        font-size: 18px; font-weight: 400;
+        height: 108.5px;
+        color:#414141; 
     }
 
-    .playersheading {margin-left: 20px; width:22%;}
-    .pseudoplayersheading {flex-grow: 2; margin-left: 11px; width:22%;}
-    .waitingtimeheading {
-        width: 23%; 
+    #gametypeheading, #gameratingheading {
+        font-size: 20px; font-weight: 500;
+        width: 13.2%; line-height: 20px;
+        text-align: center; position: relative;
+        top: 5px;
+    }
+
+    #gametypeheading {margin-left: 8px;}
+
+    #playersheading {
+        width:22%;
+        margin-left: 20px; 
+        position: relative; top: 15px;
+        font-size: 20px; 
+    }
+
+    #pseudoplayersheading {
+        width:22%;
+        margin-left: 11px;
+        flex-grow: 2;  
+    }
+
+    #waitingtimeheading {
+        width: 30%; 
         font-size: 24px;
         text-align: right; 
         margin-right: 15px; 
         position: relative; 
-        top: 10px;
+        top: 15px;
     }
 
-    .gametypeheading, .gametype {margin-left: 8px;}
-    
-    .row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 18px; font-weight: 400;
-        color:#414141;
+    .gametype {
+        width: 13.2%;
+        margin-left: 8px;
+        text-align: center;
     }
 
-    #table{margin:0 40px 0 74px;}
-    .playersheading {font-size: 20px; position: relative; top: 10px;}
-    .waitingtime {
-        width: 23%; flex-basis: 150px;
-        font-size: 24px;
-        text-align: right; 
-        margin-right: 30px;
+    .gamerating {
+        width: 13.2%;
+        font-size: 24px; font-weight: 700;
+        text-align: center;
     }
 
-    .gamerating {font-size: 24px; font-weight: 700;}
-    
-    .gametype, .gamerating {width: 13.2%;}
-    .players1, .players2 {width:22%; line-height: 40px; flex-basis: 160px;}
-    .players1 {width:22%; margin-left: 20px;}
-    .gametype, .gamerating, .gametypeheading, .gameratingheading {text-align: center;}
-    .handshake {position: relative; top: 5px; left: -2px;}
-    #table > div.row {height: 110px;}
+    .handshake {
+        position: relative; 
+        top: 5px; left: -2px;
+    }
+
+    .players1 {
+        width:22%;
+        margin-left: 20px; 
+        line-height: 50px; 
+        flex-basis: 160px;
+    }
+
+    .players2 {
+        width:22%; 
+        line-height: 50px; 
+        flex-basis: 160px;
+    }
 
     .bold {font-weight:400;}
     .color {color: #414141}
 
-    .leftcontainer {height: 973.7px; width: 52.1%;}
+    .waitingtime {
+        width: 23%;
+        margin-right: 30px;
+        flex-basis: 150px;
+        font-size: 24px;
+        text-align: right; 
+    }
 
-    .rightcontainer {
-        height: 973.7px; width: 47.9%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+    #rightcontainer {
+        width: 47.9%;
         font-size: 18px; font-weight: 400;
     }
 
-    .announcementstablemargin {
-        height: 26.4%;
+    #announcementstable {
+        height: 252px;
         margin: 0 10.4% 0 4.3%;
-    }
-    
-    .announcementstable {
-    height: 100%;
-    border: 2px solid;
-    border-color: rgb(186,92,74);
-    border-radius: 15px;
+        border: 2px solid;
+        border-color: rgb(186,92,74);
+        border-radius: 15px;
     }
 
-    .announcementstablehead {
-        height: 24%;
+    #announcementstablefirstrow {
+        height: 61.3px;
         font-size: 24px; font-weight: 700;
         text-align: center; padding-top: 15px;
         color:#393939;
     }
 
-    .announcementstabledatetime {
-        height: 11.5%;
+    #announcementstabledatetime {
+        height: 28px;
         font-size: 18px; font-weight: 400;
         color: #393939;
         display: flex;
@@ -351,10 +359,10 @@ html, body {
         padding-left: 4%; padding-right: 7%;
     }
 
-    .pmtext {font-size: 14px; font-weight: 300;}
+    #pmtext {font-size: 14px; font-weight: 300;}
 
-    .announcementstablebody {
-        height: 54%;
+    #announcementstablebody {
+        height: 134.7px;
         font-size: 18px; font-weight: 300;
         line-height: 22px;
         padding-left: 4.1%; padding-right: 9.6%;
@@ -364,51 +372,91 @@ html, body {
         border-top: #E4E4E4; border-bottom: #E4E4E4;
     }
 
-    .announcementstablelastrow {height: 10.5%;}
+    #announcementstablelastrow {height: 28px;}
 
-    .courtsheadingcontainer {padding-top: 3%; height: 9%}    
-    .courtsheading {font-size: 24px; font-weight: 500; color: #222222}
-   
+    #courtsheadingtext {
+        height: 86px;
+        line-height: 86px;
+        font-size: 24px; font-weight: 500;
+        color: #222222;
+        text-align: right;
+        margin-right: 43.2%;
+    }
 
-    .allcourtscontainermargin {height: 56.3%; width: 100%;} 
-    #allcourtscontainer {background-color: transparent; position: static; margin: 0 0 0 0;}
-    .compassbig {position: absolute; top: 20px; right: 28px;}
-    .courtstopcontainer {padding: 0 15% 0% 15%; height: 44.2%; width: 100%;}
-    .courtsbottomcontainer {padding: 0 15% 5% 15%; height: 55.8%; width:100%;}
+    #compassbig {position: absolute; top: 20px; right: 28px;}
+
+    #allcourtscontainer {
+        height: 539.2px;
+        background-color: transparent; 
+        position: static; 
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+        
+    #courtstopcontainer {
+        padding: 0 17.2% 0% 14.4%; 
+        height: 231.9px; 
+    }
+
+    #courtsbottomcontainer {
+        padding: 28.2px 17.2% 0% 14.4%; 
+        height: 307.3px; 
+    }
 
     .court1, .court2, .court3, .court4,
     .court5, .court6, .court7, .court8 {
         width: 137px; height: 232px;
         background-image: url(img/courtimages.svg);
+        position: relative;
     }
 
     .courtplay {
         font-size: 14px; font-weight:500;
-        text-align: center;
         color: #414141;
+        position: absolute; 
+
     }
 
     .courtred-box {
         font-size: 16px; font-weight: 600;
         color: #F3F3F3;
-        text-align: center;
-        margin: 10px 0 10px 0;
-        padding-bottom: 3px;
-        padding-right: 5%;
+        position: absolute;
+        left: 40px; top: 107px;
     }
 
-    .courtplayers1 {margin-top: 30px;}
-    .courtplayers4 {margin-bottom: 30px;}
+    .courtplayers1{left: 30px; top: 38px;}
+    .courtplayers2{left: 35px; top: 68px;}
+    .courtplayers3{left: 42px; top: 147px;}
+    .courtplayers4{left: 44px; top: 177px;}
 
-    .addbutton {height: 8.4%; margin-top: 0; width:84.3%;
-        margin: 0 10.4% 0 4.3%;}
-    .addbuttontext {
-        width: auto; height: 80px;
-        margin-left: 0; margin-right: 0;
+    #addbutton {
+        height: 80px;
+        margin: 0 10.4% 0 4.3%;
         background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
         border-radius: 4px;
+    }
+
+    #addtothewaitinglisttext {
+        height: 80px;
         font-size: 24px; font-weight:600;
         color: #FFFFFF;
-        text-align: center; line-height: 60px;
+        text-align: center; 
+        line-height: 80px;
     }
+
+    @media only screen and (max-width: 1500px) {
+
+        #announcementstablebody {font-size: 14px;}
+        .courtplay {font-size: 12px;}
+        .courtred-box {font-size: 14px;}
+        .courtplayers1{left: 33px;}
+        .courtplayers2{left: 38px;}
+        .courtplayers3{left: 45px;}
+        .courtplayers4{left: 47px;}
+        .row {font-size: 16px;}
+    
+    }
+
 }
+
+

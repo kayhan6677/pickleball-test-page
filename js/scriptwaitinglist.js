@@ -46,4 +46,4 @@ var content ="";
        
     }
 
-    document.getElementById("table").innerHTML += content;
+    document.getElementById("waitinglist").innerHTML += content;
