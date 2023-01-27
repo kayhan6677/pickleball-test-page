@@ -17,15 +17,15 @@ var content ="";
         }
 
         if (gametype[i]=="D") {
-        content += '<div class="gametype"><img src="img/double.svg" alt="doublesymbol"></div>';
+        content += '<div class="gametype"><img src="img/double.svg" alt="Double Symbol"></div>';
         } else {
-        content += '<div class="gametype"><img src="img/single.svg" alt="singlesymbol"></div>';
+        content += '<div class="gametype"><img src="img/single.svg" alt="Single Symbol"></div>';
         } 
 
         if (gamerating[i]=="3.5") {
             content += '<div class="gamerating">3.5</div>';
         } else {
-            content +='<div class="gamerating"><img class="handshake" src="img/handshake.svg" alt="handshake"></div>';
+            content +='<div class="gamerating"><img class="handshake" src="img/handshake.svg" alt="Handshake"></div>';
         }
         if (gametype[i]=="D") {
             if (i==2) {
@@ -41,7 +41,7 @@ var content ="";
         }
         
         content += '<div class="waitingtime"><span class="waitingtimeminutes">' + waitingtime[i] + ' </span> mins</div>'
-        + '<div class="trashcan"><img src="img/trashcan.svg" alt="trashcan"></div>'
+        + '<div class="trashcan"><img src="img/trashcan.svg" alt="Trash Can"></div>'
         + '</div>';
        
     }
