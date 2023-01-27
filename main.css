@@ -204,12 +204,12 @@ html, body {
     #header, #questionmark, #recycle, #otherinfo, #triangle,
     .trashcan, #compasssmall, #waitinglistlastrow {display: none;}
 
-    #announcementstext, .extended, #gametypeheading,
-    #gameratingheading, .gametype, .gamerating,
+    #announcementstext, .extended,
     #compassbig, .courtplay, .courtred-box
     {display: inline;}
 
-    #announcementstable, #courtsheadingtext, 
+    #announcementstable, #gametypeheading,
+    #gameratingheading, .gametype, .gamerating, #courtsheadingtext, 
     #addtothewaitinglisttext {display: block;}
 
     #bothtableheads {
@@ -266,13 +266,14 @@ html, body {
         top: 5px;
     }
 
-    #gametypeheading {margin-left: 8px;}
+    #gametypeheading {margin-left: 13px;}
+    #gameratingheading {left: 5px;}
 
     #playersheading {
         width:22%;
         margin-left: 20px; 
         position: relative; top: 15px;
-        font-size: 20px; 
+        font-size: 20px; left: 11px;
     }
 
     #pseudoplayersheading {
@@ -304,7 +305,7 @@ html, body {
 
     .handshake {
         position: relative; 
-        top: 5px; left: -2px;
+        top: 5px; left: -3px;
     }
 
     .players1 {
