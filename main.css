@@ -167,15 +167,14 @@ html, body {
     top: 3%; right: 2%;
 }
 
-.court1, .court2, .court3, .court4,
-.court5, .court6, .court7, .court8 {
+.courts {
     width: 52px; height: 88px;
 }  
 
-.court1, .court2, .court3, .court4,
-.court5, .court6 {background-image: url(img/courtimagessmall.svg);
+.courts {background-image: url(img/courtimagessmall.svg);
 }
-.court7, .court8 {background-image: url(img/courtimagessmallgray.svg);}
+
+.inactive-court {background-image: url(img/courtimagessmallgray.svg);}
 
 .courtplay, .courtred-box {display: none;}
 
@@ -405,8 +404,7 @@ html, body {
         height: 307.3px; 
     }
 
-    .court1, .court2, .court3, .court4,
-    .court5, .court6, .court7, .court8 {
+    .courts {
         width: 137px; height: 232px;
         background-image: url(img/courtimages.svg);
         position: relative;
