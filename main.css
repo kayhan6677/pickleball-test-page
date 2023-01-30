@@ -157,7 +157,7 @@ html, body {
     position: relative;
 }
 
-#courts_top_container, #courts_bottom_container {
+.courts_row {
     display: flex;
     justify-content: space-between;
 }
@@ -395,7 +395,7 @@ html, body {
         background-color: transparent; 
         position: static; 
         margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        padding: 0 158.4px 61.3px 132.6px;
     }
 
         #courts_heading_text {
@@ -408,16 +408,6 @@ html, body {
     }
 
     #compass_big {position: absolute; top: 0; right: 20px;}
-        
-    #courts_top_container {
-        padding: 0 17.2% 0% 14.4%; 
-        height: 231.9px; 
-    }
-
-    #courts_bottom_container {
-        padding: 28.2px 17.2% 0% 14.4%; 
-        height: 307.3px; 
-    }
 
     .courts {
         width: 137px; height: 232px;

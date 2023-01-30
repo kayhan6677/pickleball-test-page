@@ -1,6 +1,6 @@
 var content ="";
 
-content += '<div id=courts_top_container>'
+content += '<div class=courts_row>'
 
 for (i=0; i<4; i++) {
     content += '<div class="courts">' 
@@ -11,7 +11,7 @@ for (i=0; i<4; i++) {
     + '<div class="court_players_4 court_play">Dori D.</div></div>';
 }
 
-content += '</div><div id=courts_bottom_container>'
+content += '</div><div class=courts_row>'
 
 for (i=4; i<6; i++) {
     content += '<div class="courts">' 
