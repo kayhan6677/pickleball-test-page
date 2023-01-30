@@ -369,9 +369,8 @@ html, body {
         text-align: justify;
         background-color: #FFDCD1;
         border-top: #E4E4E4; border-bottom: #E4E4E4;
+        margin-bottom: 28px;
     }
-
-    #announcements_table_last_row {height: 28px;}
 
     #all_courts_container {
         height: 623px;
