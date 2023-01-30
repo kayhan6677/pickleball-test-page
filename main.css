@@ -41,13 +41,11 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid purple;
 }
 
 #waiting_list_heading {
     height: 54px;
     padding-top: 5px;
-    border: 1px solid red;
 }
 
 #waiting_list_text {
@@ -55,7 +53,6 @@ html, body {
     left: 7%; top: 8px;
     font-size: 18px; font-weight: 500;
     color: #222222;
-    border: 1px solid yellow;
 }
 
 #question_mark {
@@ -213,7 +210,6 @@ html, body {
        
     #big_container {
         flex-direction: row;
-        top: 75px;
     }
 
     #left_container {
@@ -222,8 +218,6 @@ html, body {
 
     #waiting_list_heading {
         height: 75px;
-        padding-top: 5px;
-        border: 1px solid red;
         text-align: center;
         align-content: center;
     }
@@ -231,28 +225,21 @@ html, body {
     #waiting_list_text {
         position: relative;
         left: 2%; top: 12px;
-        font-size: 24px; font-weight: 500;
-        color: #222222;
-        border: 1px solid yellow;
+        font-size: 24px;
     }
 
     #waiting_list_body {margin: 0 4.0% 0 7.4%;}
 
     #waiting_first_row {
         height: 87.3px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-        font-size: 18px; font-weight: 400;
+        font-size: 18px;
         height: 108.5px;
-        color:#414141; 
     }
+
+    .extended {display: flex;}
 
     #game_type_heading, #game_rating_heading {
         font-size: 20px; font-weight: 500;
@@ -330,10 +317,6 @@ html, body {
     #right_container {
         width: 47.9%;
         font-size: 18px; font-weight: 400;
-    }
-
-    #announcements_container {
-        border: 1px solid green;
     }
 
     #announcements_heading {
@@ -437,11 +420,8 @@ html, body {
     #add_button {
         height: 80px;
         margin: 0 10.4% 0 4.3%;
-        background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
         border-radius: 4px;
-        font-size: 24px; font-weight:600;
-        color: #FFFFFF;
-        text-align: center; 
+        font-size: 24px;
         line-height: 80px;
     }
 
