@@ -18,16 +18,14 @@
         </select>
         <img  class="headercircleimages" src="img/portraitphoto.png" alt="User Portrait Photo">
     </div>
-    <div id="bothtableheads">
-        <span id="waitinglisttext">Waiting List</span>
-        <img id="questionmark" src="img/questionmark.svg" alt="Question Mark">
-        <img id="recycle" src="img/recycle.svg" alt="Recycle Button">
-        <span id="announcementstext">Announcements</span>
-        <img id="compassbig" src="img/compassbig.svg" alt="Compass Figure">
-    </div>
     <div id="bigcontainer">
         <div id="leftcontainer">
-            <div id="waitinglist">
+            <div id="waitinglistheading">
+                <span id="waitinglisttext">Waiting List</span>
+                <img id="questionmark" src="img/questionmark.svg" alt="Question Mark">
+                <img id="recycle" src="img/recycle.svg" alt="Recycle Button">
+            </div>
+            <div id="waitinglistbody">
                 <div id="waitingfirstrow">
                     <div id="gametypeheading">Game <br> Type</div>
                     <div id="gameratingheading">Game Rating</div>
@@ -42,17 +40,22 @@
             </div> 
         </div>
         <div id="rightcontainer">
-            <div id="announcementstable">
-                <div id="announcementstablefirstrow">Court opening hours will change!</div>
-                <div id="announcementstabledatetime">
-                    <div>11.Dec.22</div>
-                    <div>11:20 <span id="pmtext">pm</span></div>
+            <div id="announcementscontainer">
+                <div id="announcementsheading">Announcements
+                    <img id="compassbig" src="img/compassbig.svg" alt="Compass Figure">
                 </div>
-                <div id="announcementstablebody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit malesuada purus, in rhoncus risus bibendum eu. Proin tincidunt ut quam in varius. Phasellus lorem ligula, porta ac risus at, volutpat fringilla felis. Integer lectus justo, porttitor eu nulla a, egestas blandit metus. </div>
-                <div id="announcementstablelastrow"></div>
+                <div id="announcementstable">
+                    <div id="announcementstablefirstrow">Court opening hours will change!</div>
+                    <div id="announcementstabledatetime">
+                        <div>11.Dec.22</div>
+                        <div>11:20 <span id="pmtext">pm</span></div>
+                    </div>
+                    <div id="announcementstablebody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit malesuada purus, in rhoncus risus bibendum eu. Proin tincidunt ut quam in varius. Phasellus lorem ligula, porta ac risus at, volutpat fringilla felis. Integer lectus justo, porttitor eu nulla a, egestas blandit metus. </div>
+                    <div id="announcementstablelastrow"></div>
+                </div>
             </div>
-            <div id="courtsheadingtext">Courts</div>
             <div id="allcourtscontainer">
+                <div id="courtsheadingtext">Courts</div>
                 <img id="compasssmall" src="img/compasssmall.svg" alt="Compass Figure">
                 <script src="js/scriptallcourts.js"></script>
             </div>

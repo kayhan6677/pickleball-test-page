@@ -37,38 +37,38 @@ html, body {
     color: #3F3F3F;
 }
 
-#bothtableheads {
-    position: relative;
-    margin-top: 15px;
-    font-size: 18px; font-weight: 500;
+#bigcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid purple;
+}
+
+#waitinglistheading {
+    height: 54px;
+    padding-top: 5px;
+    border: 1px solid red;
 }
 
 #waitinglisttext {
-    position: absolute;
-    left: 26px; top: 3px;
+    position: relative;
+    left: 7%; top: 8px;
+    font-size: 18px; font-weight: 500;
+    color: #222222;
+    border: 1px solid yellow;
 }
 
 #questionmark {
     position: absolute;
-    left: 158px;
+    left: 158px; top: 78px;
 }
 
 #recycle {
     position: absolute;
-    right: 6.6%;
+    right: 6.6%; top: 78px;
 }
 
-#announcementstext {display: none;}
-
-#bigcontainer {
-    width: 100%;
-    position: absolute;
-    top: 117px;
-    display: flex;
-    flex-direction: column;
-}
-
-#waitinglist {
+#waitinglistbody {
     margin-left: 17px; margin-right: 17px;
     border: 2px solid;
     border-color: rgb(186,92,74);
@@ -88,7 +88,7 @@ html, body {
 
 .extended, #gametypeheading, #gameratingheading, .gametype, .gamerating {display:none;}
 
-#waitinglist > div.row:nth-child(odd) {
+#waitinglistbody > div.row:nth-child(odd) {
     background: #F5F5F5;
     border-top: 1px solid #E4E4E4;
     border-bottom: 1px solid #E4E4E4;
@@ -96,7 +96,6 @@ html, body {
 
 #playersheading {margin-left: 13px; color: #222222;}
 #waitingtimeheading {margin-right: 30px; color: #222222;}
-
 
 .waitingtime {
     font-size: 16px; 
@@ -127,7 +126,7 @@ html, body {
 #otherinfo {
     position: absolute;
     width: 142.75px; height: 19px;
-    left: 38px; top: 202px;
+    left: 38px; top: 318px;
     font-size: 16px; font-weight: 500;
     color: #B74534; 
     text-decoration: underline;
@@ -138,12 +137,12 @@ html, body {
 #triangle {
     position: absolute;
     width: 37px; height: 16px;
-    right: 38px; top: 207px;
+    right: 38px; top: 320px;
     background: #FFFFFF;
     text-align: center;
 }
 
-#announcementstable, #compassbig, #courtsheadingtext {display:none;}
+#announcementscontainer, #compassbig, #courtsheadingtext {display:none;}
 
 #allcourtscontainer {
     display: flex;
@@ -204,34 +203,14 @@ html, body {
     #header, #questionmark, #recycle, #otherinfo, #triangle,
     .trashcan, #compasssmall, #waitinglistlastrow {display: none;}
 
-    #announcementstext, .extended,
-    #compassbig, .courtplay, .courtred-box
+    .extended, #compassbig, .courtplay, .courtred-box
     {display: inline;}
 
-    #announcementstable, #gametypeheading,
+    #announcementscontainer, #gametypeheading,
     #gameratingheading, .gametype, .gamerating, #courtsheadingtext, 
     #addtothewaitinglisttext {display: block;}
 
-    #bothtableheads {
-        margin-top: 0;
-        font-size: 24px; font-weight: 500;
-    }
-
-    #waitinglisttext {
-        left: 22.4%; top: 5px;
-        line-height: 70px;
-        color: #222222;
-    }
-
-    #announcementstext {
-        position: absolute;
-        right: 18.5%; top: 5px;
-        line-height: 70px;
-        color: #222222;
-    }
-        
-
-
+       
     #bigcontainer {
         flex-direction: row;
         top: 75px;
@@ -241,7 +220,23 @@ html, body {
         width: 52.1%;
     }
 
-    #waitinglist {margin: 0 4.0% 0 7.4%;}
+    #waitinglistheading {
+        height: 75px;
+        padding-top: 5px;
+        border: 1px solid red;
+        text-align: center;
+        align-content: center;
+    }
+    
+    #waitinglisttext {
+        position: relative;
+        left: 2%; top: 12px;
+        font-size: 24px; font-weight: 500;
+        color: #222222;
+        border: 1px solid yellow;
+    }
+
+    #waitinglistbody {margin: 0 4.0% 0 7.4%;}
 
     #waitingfirstrow {
         height: 87.3px;
@@ -337,6 +332,25 @@ html, body {
         font-size: 18px; font-weight: 400;
     }
 
+    #announcementscontainer {
+        border: 1px solid green;
+    }
+
+    #announcementsheading {
+        height: 75px;
+        font-size: 24px; font-weight: 500;
+        color: #222222;
+        text-align: center;
+        position: relative;
+        top: 20px;
+    }
+    #announcementstext {
+        position: absolute;
+        right: 18.5%; top: 5px;
+        line-height: 70px;
+        color: #222222;
+    }
+
     #announcementstable {
         height: 252px;
         margin: 0 10.4% 0 4.3%;
@@ -376,24 +390,24 @@ html, body {
 
     #announcementstablelastrow {height: 28px;}
 
-    #courtsheadingtext {
-        height: 86px;
-        line-height: 86px;
-        font-size: 24px; font-weight: 500;
-        color: #222222;
-        text-align: right;
-        margin-right: 43.2%;
-    }
-
-    #compassbig {position: absolute; top: 20px; right: 20px;}
-
     #allcourtscontainer {
-        height: 539.2px;
+        height: 623px;
         background-color: transparent; 
         position: static; 
         margin: 0 0 0 0;
         padding: 0 0 0 0;
     }
+
+        #courtsheadingtext {
+        height: 86px;
+        line-height: 86px;
+        font-size: 24px; font-weight: 500;
+        color: #222222;
+        text-align: right;
+        margin-right: 46.2%;
+    }
+
+    #compassbig {position: absolute; top: 0; right: 20px;}
         
     #courtstopcontainer {
         padding: 0 17.2% 0% 14.4%; 
