@@ -142,16 +142,18 @@ html, body {
 #announcements_container, #compass_big, #courts_heading_text {display:none;}
 
 #all_courts_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    height: 286px; 
     margin: 25px 18px 15px 15px;
     padding: 47.5px 52px 29px 54px;
     border-radius: 15px;
+    height: 286px;
     background-color: #F8F8F8;
     position: relative;
+}
+
+#courts_row_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .courts_row {
@@ -373,23 +375,31 @@ html, body {
     }
 
     #all_courts_container {
-        height: 623px;
+        height: 625px;
         background-color: transparent; 
         position: static; 
-        margin: 0 0 0 0;
-        padding: 0 158.4px 61.3px 132.6px;
+        margin: 0 96px 0 40px;
+        padding: 0 62.4px 61.2px 90.6px;
     }
 
-        #courts_heading_text {
-        height: 86px;
-        line-height: 86px;
+    #courts_heading_text {
+        height: 71.8px;
+        line-height: 72px;
         font-size: 24px; font-weight: 500;
         color: #222222;
         text-align: right;
-        margin-right: 46.2%;
+        margin-right: 42%;
+    }
+
+    #courts_row_container {
+        height: 492px;
     }
 
     #compass_big {position: absolute; top: 0; right: 20px;}
+
+    .courts_row:nth-child(2) {
+        column-gap: 0;
+    }
 
     .courts {
         width: 137px; height: 232px;
