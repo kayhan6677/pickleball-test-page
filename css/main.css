@@ -1,0 +1,469 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 63px;
+    background-image: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
+    border-radius: 0 0 15px 15px;
+}
+
+.header_circle_images {
+    width: 41px; height:41px;
+    margin: 14px;
+}
+
+#header_select_court {
+    appearance: none;
+    background-image: url(img/vectorbutton.svg);
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 12px;
+    width: 100%; height: 32px;
+    margin: 14px; padding-left: 6px;
+    font-size: 14px; font-weight: 400;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    color: #3F3F3F;
+}
+
+#big_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#waiting_list_heading {
+    height: 54px;
+    padding-top: 5px;
+}
+
+#waiting_list_text {
+    position: relative;
+    left: 7%; top: 8px;
+    font-size: 18px; font-weight: 500;
+    color: #222222;
+}
+
+#question_mark {
+    position: absolute;
+    left: 158px; top: 78px;
+}
+
+#recycle {
+    position: absolute;
+    right: 6.6%; top: 78px;
+}
+
+#waiting_list_body {
+    margin-left: 17px; margin-right: 17px;
+    border: 2px solid;
+    border-color: rgb(186,92,74);
+    border-radius: 15px;
+    color: #414141;
+}
+
+#waiting_first_row, .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 14px; font-weight: 500;
+    height: 40px; 
+}
+
+.row {font-size: 12px; font-weight: 400;}
+
+.extended, #game_type_heading, #game_rating_heading, .game_type, .game_rating {display:none;}
+
+#waiting_list_body > div.row:nth-child(odd) {
+    background: #F5F5F5;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+#players_heading {margin-left: 13px; color: #222222;}
+#waiting_time_heading {margin-right: 30px; color: #222222;}
+
+.waiting_time {
+    font-size: 16px; 
+    padding: 12px;  
+    flex-basis: 100px; 
+    text-align: right;
+}
+.waiting_time_minutes {font-weight: 700}
+.trash_can {margin-top: 7px; margin-right: 13px;}
+
+
+.players_1 {
+    margin-left: 13px;
+    flex-basis: 115px;
+}
+
+.players_2 {
+    margin-left: 11px;
+    flex-basis: 115px; 
+    flex-grow: 8; 
+}
+
+.current-user-game {font-weight: 600;}
+.current-user {color: #B74534}
+
+#waiting_list_last_row {height:10px;}
+
+#other_info {
+    position: absolute;
+    width: 142.75px; height: 19px;
+    left: 38px; top: 318px;
+    font-size: 16px; font-weight: 500;
+    color: #B74534; 
+    text-decoration: underline;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+#triangle {
+    position: absolute;
+    width: 37px; height: 16px;
+    right: 38px; top: 320px;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+#announcements_container, #compass_big, #courts_heading_text {display:none;}
+
+#all_courts_container {
+    margin: 25px 18px 15px 15px;
+    padding: 47.5px 52px 29px 54px;
+    border-radius: 15px;
+    height: 286px;
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+#courts_row_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 210px;
+}
+
+.courts_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#compass_small {
+    position: absolute;
+    top: 3%; right: 2%;
+}
+
+.courts {
+    width: 52px; height: 88px;
+}  
+
+.courts {background-image: url(../img/courtimagessmall.svg);
+}
+
+.inactive-court {background-image: url(../img/courtimagessmallgray.svg);}
+
+.court_play, .court_red-box {display: none;}
+
+#add_button {
+    height: 36px;
+    margin-left: 17px; margin-right: 17px;
+    background: linear-gradient(180deg, #B74534 0%, #C95D4D 100%);
+    border-radius: 4px;
+    font-size: 16px; font-weight:600;
+    color: #FFFFFF;
+    line-height: 36px;
+    text-align: center;
+}
+
+#add_button::after {
+    content: " me";
+}
+
+
+@media only screen and (max-width: 410px) {
+    .mobile {font-size: 10px;}
+}
+
+@media only screen and (min-width: 768px) {
+
+    #header, #question_mark, #recycle, #other_info, #triangle,
+    .trash_can, #compass_small, #waiting_list_last_row {display: none;}
+
+    .extended, #compass_big, .court_play, .court_red-box
+    {display: inline;}
+
+    #announcements_container, #game_type_heading,
+    #game_rating_heading, .game_type, .game_rating, #courts_heading_text, 
+    #add_to_the_waiting_list_text {display: block;}
+
+       
+    #big_container {
+        flex-direction: row;
+    }
+
+    #left_container {
+        width: 52.1%;
+    }
+
+    #waiting_list_heading {
+        height: 75px;
+        text-align: center;
+        align-content: center;
+    }
+    
+    #waiting_list_text {
+        position: relative;
+        left: 2%; top: 12px;
+        font-size: 24px;
+    }
+
+    #waiting_list_body {margin: 0 4.0% 0 7.4%;}
+
+    #waiting_first_row {
+        height: 87.3px;
+    }
+
+    .row {
+        font-size: 18px;
+        height: 108.5px;
+    }
+
+    .extended {display: flex;}
+
+    #game_type_heading, #game_rating_heading {
+        font-size: 20px; font-weight: 500;
+        width: 13.2%; line-height: 20px;
+        text-align: center; position: relative;
+        top: 5px;
+    }
+
+    #game_type_heading {margin-left: 13px;}
+    #game_rating_heading {left: 5px;}
+
+    #players_heading {
+        width:22%;
+        margin-left: 20px; 
+        position: relative; top: 15px;
+        font-size: 20px; left: 11px;
+    }
+
+    #pseudo_players_heading {
+        width:22%;
+        margin-left: 11px;
+        flex-grow: 2;  
+    }
+
+    #waiting_time_heading {
+        width: 30%; 
+        font-size: 24px;
+        text-align: right; 
+        margin-right: 15px; 
+        position: relative; 
+        top: 15px;
+    }
+
+    .game_type {
+        width: 13.2%;
+        margin-left: 8px;
+        text-align: center;
+    }
+
+    .game_rating {
+        width: 13.2%;
+        font-size: 24px; font-weight: 700;
+        text-align: center;
+    }
+
+    .hand_shake {
+        position: relative; 
+        top: 5px; left: -3px;
+    }
+
+    .players_1 {
+        width:22%;
+        margin-left: 20px; 
+        line-height: 50px; 
+        flex-basis: 200px;
+    }
+
+    .players_2 {
+        width:22%; 
+        line-height: 50px; 
+        flex-basis: 200px;
+    }
+
+    .current-user-game {font-weight: 400;}
+    .current-user {color: #414141;}
+
+    .waiting_time {
+        width: 23%;
+        margin-right: 30px;
+        flex-basis: 150px;
+        font-size: 24px;
+        text-align: right; 
+    }
+
+    #right_container {
+        width: 47.9%;
+        font-size: 18px; font-weight: 400;
+    }
+
+    #announcements_heading {
+        height: 75px;
+        font-size: 24px; font-weight: 500;
+        color: #222222;
+        text-align: center;
+        position: relative;
+        top: 20px;
+    }
+    #announcements_text {
+        position: absolute;
+        right: 18.5%; top: 5px;
+        line-height: 70px;
+        color: #222222;
+    }
+
+    #announcements_table {
+        height: 252px;
+        margin: 0 10.4% 0 4.3%;
+        border: 2px solid;
+        border-color: rgb(186,92,74);
+        border-radius: 15px;
+    }
+
+    #announcements_table_first_row {
+        height: 61.3px;
+        font-size: 24px; font-weight: 700;
+        text-align: center; padding-top: 15px;
+        color:#393939;
+    }
+
+    #announcements_table_date_time {
+        height: 28px;
+        font-size: 18px; font-weight: 400;
+        color: #393939;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 4%; padding-right: 7%;
+    }
+
+    #pmtext {font-size: 14px; font-weight: 300;}
+
+    #announcements_table_body {
+        height: 134.7px;
+        font-size: 18px; font-weight: 300;
+        line-height: 22px;
+        padding-left: 4.1%; padding-right: 9.6%;
+        padding-top: 20px; padding-bottom: 17px;
+        text-align: justify;
+        background-color: #FFDCD1;
+        border-top: #E4E4E4; border-bottom: #E4E4E4;
+        margin-bottom: 28px;
+    }
+
+    #all_courts_container {
+        height: 625px;
+        background-color: transparent; 
+        position: static; 
+        margin: 0 96px 0 40px;
+        padding: 0 62.4px 61.2px 90.6px;
+    }
+
+    #courts_heading_text {
+        height: 71.8px;
+        line-height: 72px;
+        font-size: 24px; font-weight: 500;
+        color: #222222;
+        text-align: right;
+        margin-right: 42%;
+    }
+
+    #courts_row_container {
+        height: 492px;
+    }
+
+    #compass_big {position: absolute; top: 0; right: 20px;}
+
+    .courts_row:nth-child(2) {
+        column-gap: 0;
+    }
+
+    .courts {
+        width: 137px; height: 232px;
+        background-image: url(../img/courtimages.svg);
+        position: relative;
+    }
+
+    .court_play {
+        font-size: 14px; font-weight:500;
+        color: #414141;
+        position: absolute; 
+
+    }
+
+    .court_red-box {
+        font-size: 16px; font-weight: 600;
+        color: #F3F3F3;
+        position: absolute;
+        left: 42px; top: 105px;
+    }
+
+    .court_players_1{left: 30px; top: 38px;}
+    .court_players_2{left: 35px; top: 68px;}
+    .court_players_3{left: 42px; top: 147px;}
+    .court_players_4{left: 44px; top: 177px;}
+
+    #add_button {
+        height: 80px;
+        margin: 0 10.4% 0 4.3%;
+        border-radius: 4px;
+        font-size: 24px;
+        line-height: 80px;
+    }
+
+    #add_button::after {
+        content: " to the waiting list";
+    }
+
+    @media only screen and (max-width: 1600px) {
+        
+        .row {font-size: 16px}
+        .players1, .players2 {line-height: 30px;}
+        #announcements_table_body {font-size: 14px;}
+        .court_play {font-size: 12px;}
+        .court_red-box {font-size: 14px;}
+        .court_players_1{left: 33px;}
+        .court_players_2{left: 38px;}
+        .court_players_3{left: 45px;}
+        .court_players_4{left: 47px;}   
+    }
+
+    @media only screen and (max-width: 1250px) {
+        
+        .row {font-size: 14px}
+        .players_1, .players_2 {line-height: 30px;}
+        #announcements_table_body {font-size: 12px;}
+        .court_play {font-size: 10px;}
+        .court_red-box {font-size: 12px;}
+        .court_players_1{left: 35px;}
+        .court_players_2{left: 40px;}
+        .court_players_3{left: 47px;}
+        .court_players_4{left: 49px;}   
+    }
+}
+
+
