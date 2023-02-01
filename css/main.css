@@ -81,15 +81,19 @@ html, body {
     height: 40px; 
 }
 
+div.row.extended:nth-child(4) {height: 100px;}
+
 .row {font-size: 12px; font-weight: 400;}
 
 .extended, #game_type_heading, #game_rating_heading, .game_type, .game_rating {display:none;}
 
-#waiting_list_body > div.row:nth-child(odd) {
+.row:nth-child(even) {
     background: #F5F5F5;
     border-top: 1px solid #E4E4E4;
     border-bottom: 1px solid #E4E4E4;
 }
+
+.row:nth-child(7) {height:  50px;}
 
 #players_heading {margin-left: 13px; color: #222222;}
 #waiting_time_heading {margin-right: 30px; color: #222222;}
@@ -143,7 +147,7 @@ html, body {
 
 #all_courts_container {
     margin: 25px 18px 15px 15px;
-    padding: 47.5px 52px 29px 54px;
+    padding: 47.5px 13.2% 29px 13.7%;
     border-radius: 15px;
     height: 286px;
     background-color: #F8F8F8;
@@ -242,6 +246,8 @@ html, body {
         height: 108.5px;
     }
 
+    .row:nth-child(7) {height: 108.5px;}
+   
     .extended {display: flex;}
 
     #game_type_heading, #game_rating_heading {
@@ -251,7 +257,7 @@ html, body {
         top: 5px;
     }
 
-    #game_type_heading {margin-left: 13px;}
+    #game_type_heading {margin-left: 1.5%;}
     #game_rating_heading {left: 5px;}
 
     #players_heading {
@@ -278,7 +284,7 @@ html, body {
 
     .game_type {
         width: 13.2%;
-        margin-left: 8px;
+        margin-left: 0.9%;
         text-align: center;
     }
 
@@ -311,7 +317,7 @@ html, body {
 
     .waiting_time {
         width: 23%;
-        margin-right: 30px;
+        margin-right: 3.4%;
         flex-basis: 150px;
         font-size: 24px;
         text-align: right; 
@@ -379,7 +385,7 @@ html, body {
         height: 625px;
         background-color: transparent; 
         position: static; 
-        margin: 0 96px 0 40px;
+        margin: 0 10.4% 0 4.3%;
         padding: 0 62.4px 61.2px 90.6px;
     }
 
@@ -439,11 +445,13 @@ html, body {
         content: " to the waiting list";
     }
 
-    @media only screen and (max-width: 1600px) {
+    @media only screen and (max-width: 1650px) {
         
         .row {font-size: 16px}
         .players1, .players2 {line-height: 30px;}
+        #game_type_heading, #game_rating_heading, #players_heading {font-size: 18px;}
         #announcements_table_body {font-size: 14px;}
+        #all_courts_container {padding: 0 0px 61.2px 0px;}
         .court_play {font-size: 12px;}
         .court_red-box {font-size: 14px;}
         .court_players_1{left: 33px;}
@@ -456,6 +464,8 @@ html, body {
         
         .row {font-size: 14px}
         .players_1, .players_2 {line-height: 30px;}
+        #game_type_heading, #game_rating_heading, #players_heading {font-size: 16px;}
+        #waiting_time_heading, .waiting_time {font-size: 20px;}
         #announcements_table_body {font-size: 12px;}
         .court_play {font-size: 10px;}
         .court_red-box {font-size: 12px;}
