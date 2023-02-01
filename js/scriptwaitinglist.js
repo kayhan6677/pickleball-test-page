@@ -17,15 +17,15 @@ var content ="";
         }
 
         if (game_type[i]=="D") {
-        content += '<div class="game_type"><img src="img/double.svg" alt="Double Symbol"></div>';
+        content += '<div class="game_type"><img src="img/waiting_list/double.svg" alt="Double Symbol"></div>';
         } else {
-        content += '<div class="game_type"><img src="img/single.svg" alt="Single Symbol"></div>';
+        content += '<div class="game_type"><img src="img/waiting_list/single.svg" alt="Single Symbol"></div>';
         } 
 
         if (game_rating[i]=="3.5") {
             content += '<div class="game_rating">3.5</div>';
         } else {
-            content +='<div class="game_rating"><img class="hand_shake" src="img/handshake.svg" alt="Handshake"></div>';
+            content +='<div class="game_rating"><img class="hand_shake" src="img/waiting_list/handshake.svg" alt="Handshake"></div>';
         }
         if (game_type[i]=="D") {
             if (i==2) {
@@ -41,7 +41,7 @@ var content ="";
         }
         
         content += '<div class="waiting_time"><span class="waiting_time_minutes">' + waiting_time[i] + ' </span> mins</div>'
-        + '<div class="trash_can"><img src="img/trashcan.svg" alt="Trash Can"></div>'
+        + '<div class="trash_can"><img src="img/waiting_list/trashcan.svg" alt="Trash Can"></div>'
         + '</div>';
        
     }

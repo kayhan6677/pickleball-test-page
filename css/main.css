@@ -23,7 +23,7 @@ html, body {
 
 #header_select_court {
     appearance: none;
-    background-image: url(img/vectorbutton.svg);
+    background-image: url(img/waiting_list/vectorbutton.svg);
     background-repeat: no-repeat;
     background-position-x: 97%;
     background-position-y: 12px;
@@ -175,10 +175,10 @@ div.row.extended:nth-child(4) {height: 100px;}
     width: 52px; height: 88px;
 }  
 
-.courts {background-image: url(../img/courtimagessmall.svg);
+.courts {background-image: url(../img/courts/courtimagessmall.svg);
 }
 
-.inactive-court {background-image: url(../img/courtimagessmallgray.svg);}
+.inactive-court {background-image: url(../img/courts/courtimagessmallgray.svg);}
 
 .court_play, .court_red-box {display: none;}
 
@@ -410,7 +410,7 @@ div.row.extended:nth-child(4) {height: 100px;}
 
     .courts {
         width: 137px; height: 232px;
-        background-image: url(../img/courtimages.svg);
+        background-image: url(../img/courts/courtimages.svg);
         position: relative;
     }
 
