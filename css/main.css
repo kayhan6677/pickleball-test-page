@@ -21,6 +21,15 @@ html, body {
     margin: 14px;
 }
 
+.rounded {
+    border-radius: 50%;
+    height: 43px;
+    width: 63px;
+    margin-right: 9px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
 #header_select_court {
     appearance: none;
     background-image: url(img/waiting_list/vectorbutton.svg);
