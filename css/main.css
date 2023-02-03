@@ -435,6 +435,7 @@ div.row.extended:nth-child(4) {height: 100px;}
         color: #F3F3F3;
         position: absolute;
         left: 42px; top: 105px;
+        margin-bottom: 4.12px;
     }
 
     .court_players_1{left: 30px; top: 38px;}
