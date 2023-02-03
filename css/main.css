@@ -216,8 +216,10 @@ div.row.extended:nth-child(4) {height: 100px;}
     #header, #question_mark, #recycle, #other_info, #triangle,
     .trash_can, #compass_small, #waiting_list_last_row {display: none;}
 
-    .extended, #compass_big, .court_play, .court_red-box
+    #compass_big, .court_play, .court_red-box
     {display: inline;}
+
+    .extended {display: flex !important;} 
 
     #announcements_container, #game_type_heading,
     #game_rating_heading, .game_type, .game_rating, #courts_heading_text, 
@@ -252,7 +254,7 @@ div.row.extended:nth-child(4) {height: 100px;}
 
     .row {
         font-size: 18px;
-        height: 108.5px;
+        height: 108.5px !important;
     }
 
     .row:nth-child(7) {height: 108.5px;}
