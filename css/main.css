@@ -32,7 +32,7 @@ html, body {
 
 #header_select_court {
     appearance: none;
-    background-image: url(img/waiting_list/vectorbutton.svg);
+    background-image: url(../img/header/vectorbutton.svg);
     background-repeat: no-repeat;
     background-position-x: 97%;
     background-position-y: 12px;
